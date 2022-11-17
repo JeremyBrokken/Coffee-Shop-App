@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coffee_Shop_App.Views.About"
+             Title="About">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="SandyBrown">
+
+            <Grid>
+                <!-- Header -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                        <!-- Logo -->
+                        <ContentView VerticalOptions="FillAndExpand">
+                            <Frame Padding="0,0,0,1" BackgroundColor="Black">
+                                <Image Source="Shop.jfif"/>
+                            </Frame>
+                            
+                        </ContentView>
+                    </StackLayout>
+                </StackLayout>
+
+                <!-- Body -->
+                <ScrollView Grid.Row="1">
+                    <StackLayout Orientation="Vertical" Padding="30,0,30,24" Spacing="10">
+                        <Label Text="Jules Cafe" FontSize="50" FontAttributes="Bold" TextColor="#9c1e03"/>
+                        <Label Text="4A Kent Street
+                               
+                               
+                               Newmarket
+                               
+                               
+                               Auckland
+                               
+                               
+                               1023" FontSize="25" TextColor="#9c1e03"/>
+                        <Label Text="+64 9 444 5555" FontSize="25" TextColor="#9c1e03"/>
+                        <Label Text="info@julescafe.co.nz" FontSize="25" TextColor="#9c1e03"/>
+
+                    <StackLayout Orientation="Horizontal">
+                        <ImageButton Source="FBLogo.png" BackgroundColor="White" Scale="0.4" Padding="-47"/>
+                        <Button ImageSource="IGLogo.png" BackgroundColor="White" Scale="0.4" Padding="-40"/>
+                    </StackLayout>
+
+        </StackLayout>
+                </ScrollView>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

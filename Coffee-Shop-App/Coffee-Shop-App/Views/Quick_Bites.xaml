@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coffee_Shop_App.Views.Quick_Bites">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#9c1e03">
+            <Grid>
+                <ScrollView Grid.Row="0">
+                    <StackLayout Orientation="Vertical" Padding="5,5,5,5">
+
+                        <!-- Bagel -->
+                        <StackLayout Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  BackgroundColor="SandyBrown"  Padding="5,5,5,5">
+                                <Frame Padding="2,2,2,2" BackgroundColor="SaddleBrown">
+                                    <Image Source="Bagel.png"/>
+                                </Frame>
+                                <StackLayout>
+                                    <Label Text="Bagel" FontSize="Title"/>
+                                    <Label Text="Freshly baked each morning" FontSize="Body" />
+                                    <Label Text="$1.50" FontSize="Large" HorizontalTextAlignment="End"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+
+                        <!-- Eggs Benedict -->
+                        <StackLayout Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  BackgroundColor="SandyBrown"  Padding="5,5,5,5">
+                                <Frame Padding="2,2,2,2" BackgroundColor="SaddleBrown">
+                                    <Image Source="EggsB.png"/>
+                                </Frame>
+                                <StackLayout>
+                                    <Label Text="Eggs Benedict" FontSize="Title"/>
+                                    <Label Text="Poached eggs over bacon and buttered toasted English Muffin, topped with Hollondaise sauce" FontSize="Body" />
+                                    <Label Text="$6.50" FontSize="Large" HorizontalTextAlignment="End"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+
+                    </StackLayout>
+                </ScrollView>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -28,11 +28,17 @@
             <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
         </ResourceDictionary>
     </Shell.Resources>
-
+    
+        <!-- Tab menu -->
     <TabBar>
-        <ShellContent Title="Menu" Icon="icon_feed.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
-        <ShellContent Title="About" Icon="icon_about.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
-        <ShellContent Title="Map" Icon="icon_map.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <Tab>
+        <!-- Menu -->
+            <ShellContent Title="Menu" Icon="icon_feed.png" Route="AboutPage" ContentTemplate="{DataTemplate local:MainPage}" />
+        <!-- About -->           
+        <ShellContent Title="About" Icon="icon_about.png" ContentTemplate="{DataTemplate local:About}" />
+        <!-- Map -->
+        <ShellContent Title="Map" Icon="icon_map.png" ContentTemplate="{DataTemplate local:Map}" />
+        </Tab>
     </TabBar>
 
     <!--

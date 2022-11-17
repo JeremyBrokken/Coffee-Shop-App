@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coffee_Shop_App.Views.Espresso"
+             Title="Espresso">
+
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="#9c1e03">
+            <Grid>
+            <ScrollView Grid.Row="0">
+                    <StackLayout Orientation="Vertical" Padding="5,5,5,5">
+                    <!-- Cafe Americano -->
+                        <Button Text="Cafe Americano            $2.50" HeightRequest="95" FontSize="Large" BackgroundColor="SandyBrown"/>
+                    <!-- Cafe Latte -->
+                        <Button Text="Cafe Latte                       $3.00" HeightRequest="95" FontSize="Large" BackgroundColor="SandyBrown"/>
+                    <!-- Cappuccino -->
+                        <Button Text="Cappuccino                     $3.50" HeightRequest="95" FontSize="Large" BackgroundColor="SandyBrown"/>
+                    <!-- Single Shot -->
+                        <Button Text="Single Shot                     $0.75" HeightRequest="95" FontSize="Large" BackgroundColor="SandyBrown"/>
+                    <!-- Cloud Machiatto -->
+                        <Button Text="Cloud Machiatto         $3.50" HeightRequest="95" FontSize="Large" BackgroundColor="SandyBrown"/>
+                    <!-- Dolce Latte -->
+                        <Button Text="Dolce Latte                     $4.50" HeightRequest="95" FontSize="Large" BackgroundColor="SandyBrown"/>
+                    </StackLayout>
+            </ScrollView>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

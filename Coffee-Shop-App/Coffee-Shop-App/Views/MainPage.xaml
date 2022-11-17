@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coffee_Shop_App.Views.MainPage"
+             xmlns:vm="clr-namespace:Coffee_Shop_App.ViewModels"
+             Title="{Binding Title}">
+
+    <!-- Pre-defined -->
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">Black</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid BackgroundColor="#9c1e03">
+        <!-- Header -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+        <!-- Logo -->
+                <ContentView Padding="0,70,0,60" VerticalOptions="FillAndExpand">
+                    <Image Source="Logo.png" Scale="1.3"/>
+                </ContentView>
+            </StackLayout>
+        </StackLayout>
+        
+        <!-- Body -->
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="5,5,5,5">
+                <!-- Espresso -->
+                <Button Text="Espresso" HeightRequest="95" FontSize="29"
+                        Clicked="Espresso" BackgroundColor="SandyBrown" TextColor="#9c1e03" FontAttributes="Bold"/>
+                <!-- Hot Drinks -->
+                <Button Text="Hot Drinks" HeightRequest="95" FontSize="29" 
+                        Clicked="Hot_Drinks" BackgroundColor="SandyBrown" TextColor="#9c1e03" FontAttributes="Bold"/>
+                <!-- Cold Drinks -->
+                <Button Text="Cold Drinks" HeightRequest="95" FontSize="29" 
+                        Clicked="Cold_Drinks" BackgroundColor="SandyBrown" TextColor="#9c1e03" FontAttributes="Bold"/>
+                <!-- Quick Bites -->
+                <Button Text="Quick Bites" HeightRequest="95" FontSize="29" 
+                        Clicked="Quick_Bites" BackgroundColor="SandyBrown" TextColor="#9c1e03" FontAttributes="Bold"/>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

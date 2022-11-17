@@ -9,7 +9,7 @@ namespace Coffee_Shop_App.ViewModels
     {
         public AboutViewModel()
         {
-            Title = "About";
+            Title = "Menu";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
         }
 
